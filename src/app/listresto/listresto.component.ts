@@ -11,6 +11,11 @@ export class ListrestoComponent implements OnInit {
   constructor(private restsvc: RestoService) { }
 
   ngOnInit(): void {
+    this.getAllResto();
+  }
+
+  getAllResto(){
+
     this.restsvc.getAllRestaturants().subscribe
     (
       (result) =>
@@ -20,4 +25,14 @@ export class ListrestoComponent implements OnInit {
     );
   }
 
+  deleteResto(id: any)
+  {
+    this.restsvc.deleteRestaurant(id).subscribe(
+      (result) =>
+      {
+        //this.restaturantCollection.splice(id - 1 , 1);
+         this.getAllResto(); // to get list again from api
+      }
+    );
+  }
 }

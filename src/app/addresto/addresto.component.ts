@@ -43,7 +43,7 @@ export class AddrestoComponent implements OnInit {
       {
           // tslint:disable-next-line: no-non-null-assertion
           this.returnresult = `${result.name} added successfully`;
-          this.addResto.reset();
+          //this.addResto.reset();
           this.showSuccessAlert = true;
       }
     );

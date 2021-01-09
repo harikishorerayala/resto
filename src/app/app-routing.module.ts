@@ -18,7 +18,7 @@ const routes: Routes = [
 {path: 'ListResto', component: ListrestoComponent},
 {path: 'Login', component: LoginComponent},
 {path: 'Register', component: RegisterComponent},
-{path: 'UpdateResto', component: UpdaterestoComponent},
+{path: 'UpdateResto/:id', component: UpdaterestoComponent},
 {path: 'SearchResto', component: SearchrestoComponent},
 {path: 'DeleteResto', component: DeleterestoComponent},
 {path: 'Home', component: AppComponent},
