@@ -7,7 +7,7 @@ import {RestoService} from '../resto.service';
   styleUrls: ['./listresto.component.css']
 })
 export class ListrestoComponent implements OnInit {
-  restaturantCollection={};
+  restaturantCollection = {};
   constructor(private restsvc: RestoService) { }
 
   ngOnInit(): void {
