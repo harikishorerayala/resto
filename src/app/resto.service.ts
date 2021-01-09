@@ -12,4 +12,8 @@ export class RestoService {
   getAllRestaturants() {
     return this.http.get(this.allrestourl);
   }
+
+  addNewRestaurant(data: any){
+    return this.http.post(this.allrestourl, data);
+  }
 }
