@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { UpdaterestoComponent } from './updateresto/updateresto.component';
 import { ListrestoComponent } from './listresto/listresto.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SearchrestoComponent } from './searchresto/searchresto.component';
+import { DeleterestoComponent } from './deleteresto/deleteresto.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { RegisterComponent } from './register/register.component';
     UpdaterestoComponent,
     ListrestoComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagenotfoundComponent,
+    SearchrestoComponent,
+    DeleterestoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

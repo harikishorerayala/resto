@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RestoService} from '../resto.service';
 
 @Component({
   selector: 'app-listresto',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listresto.component.css']
 })
 export class ListrestoComponent implements OnInit {
-
-  constructor() { }
+  restaturantCollection={};
+  constructor(private restsvc: RestoService) { }
 
   ngOnInit(): void {
+    this.restsvc.getAllRestaturants().subscribe
+    (
+      (result) =>
+      {
+        this.restaturantCollection = result;
+      }
+    );
   }
 
 }
