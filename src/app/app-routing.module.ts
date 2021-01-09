@@ -22,6 +22,7 @@ const routes: Routes = [
 {path: 'SearchResto', component: SearchrestoComponent},
 {path: 'DeleteResto', component: DeleterestoComponent},
 {path: 'Home', component: AppComponent},
+{path: '', component: ListrestoComponent},
 {path: '**', component: PagenotfoundComponent}
 ];
 
